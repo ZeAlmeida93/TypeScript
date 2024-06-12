@@ -14,3 +14,15 @@ address : 'Berlin, Germany'
 
 }
 
+function updateName(person : IPerson , newName:string) :IPerson {
+return {
+...person,
+name:newName
+
+  }
+}
+
+
+
+const updatePerson = updateName (person , 'Marcus');
+
